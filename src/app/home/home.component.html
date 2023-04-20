@@ -1,31 +1,112 @@
+
 <div class="home-wrapper">
     
-    <div class="home-column-chair">
-        <img src="../assets/chairs/chair-2.jpg" >
-    </div>
-
-    <div class="home-column-dining-sets">
-        <img src="../assets/dining-sets/dining-sets-1.jpg" >
-    </div>
-
-    <div class="home-column-lighting-1">
-        <img src="../assets/lighting/lighting-2.jpg" >
-    </div>
-
-    <div class="home-column-lighting-2">
-        <img src="../assets/lighting/lighting-3.jpg" >
-    </div>
-
-    <div class="home-column-storage">  
-        <img src="../assets/storage/storage-3.jpg" >
-    </div>
+        <div class="home-column-chair">
+            <img src="../assets/chairs/chair-2.jpg" >
+        </div>
     
-    <div class="go-to-shop">
-        <span class="go-to-shop-span">start to shop</span>
-        <span class="material-symbols-outlined">
-            arrow_forward_ios
-        </span>
-        <div class="go-to-shop-circle"></div>
-    </div>
+        <div class="home-column-dining-sets">
+            <img src="../assets/dining-sets/dining-sets-1.jpg" >
+        </div>
+
+        <div class="go-to-shop">
+            <a class="go-to-shop-span">start to shop</a>
+            <span class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>
+            <div class="go-to-shop-circle"></div>
+        </div>
+    
+    
+        <div class="home-column-lighting-1">
+            <img src="../assets/lighting/lighting-2.jpg" >
+        </div>
+    
+        <div class="home-column-lighting-2">
+            <img src="../assets/lighting/lighting-3.jpg" >
+        </div>
+    
+        <div class="home-column-storage">  
+            <img src="../assets/storage/storage-3.jpg" >
+        </div>
+        
 
 </div>
+
+<div class="categories-wrapper"> 
+
+        <div class="categories-view-all">
+            <span class="categories">Categories</span>
+            <span class="view-all">View All</span>
+      
+        </div>
+        <div [ngClass]="{'categories-row-expanded': lightingExpanded,'categories-row':lightingNormal ,}" (click)=" toggleCategoriesRow(0)" >
+            <span class="categorie-number">01</span>
+            <span class="categorie-title" >Lighting</span>
+            <span class="material-symbols-outlined">
+                 {{ navLighting }}
+            </span>
+            <div [ngStyle]="{display: subcategories}" class="sub-categories" >
+                <span>chandeliers</span><br>
+                <span>wall sconces</span><br>
+                <span>table lamps</span><br>
+                <span>pendant lights</span><br>
+                <span>spot lights</span><br>
+                <span>cabinet lights</span>
+            </div>
+        </div>
+        <div [ngClass]="{'categories-row-expanded': diningSetsExpanded,'categories-row': diningSetsNormal}" (click)=" toggleCategoriesRow(1)" >
+            <span class="categorie-number">02</span>
+            <span class="categorie-title">Dinind Sets</span>
+            <span class="material-symbols-outlined">
+                {{ navDiningSets }}
+            </span>
+            <div [ngStyle]="{display: subcategories}" class="sub-categories" >
+                <span>formal</span><br>
+                <span>mordern</span><br>
+                <span>rustic</span><br>
+                <span>outdoor  </span><br>
+                <span>small-space</span><br>
+                <span>counter-height</span>
+            </div>
+        
+        </div>
+        <div [ngClass]="{'categories-row-expanded': chairsExpanded,'categories-row':chairsNormal }" (click)=" toggleCategoriesRow(2)" >
+            <span class="categorie-number">03</span>
+            <span class="categorie-title">Chairs</span>
+            <span class="material-symbols-outlined">
+                {{ navChairs }}
+            </span>
+            <div [ngStyle]="{display: subcategories}" class="sub-categories" >
+                <span>accent </span><br>
+                <span>recliners</span><br>
+                <span>office</span><br>
+                <span>rocking </span><br>
+                <span>dining</span><br>
+                <span>lounge</span>
+            </div>
+           
+        </div>
+        <div [ngClass]="{'categories-row-expanded': storageExpanded ,'categories-row':storageNormal}" (click)=" toggleCategoriesRow(3)" >
+            <span class="categorie-number">04</span>
+            <span class="categorie-title">Storage</span>
+            <span class="material-symbols-outlined">
+                {{ navStorage }}
+            </span>
+            <div [ngStyle]="{display: subcategories}" class="sub-categories" >
+                <span>shelving units</span><br>
+                <span>bookcases</span><br>
+                <span>cabinets</span><br>
+                <span>storage benches</span><br>
+                <span>baskets </span><br>
+                <span>closet systems</span>
+            </div>
+        </div>
+</div>
+
+<app-latest-collection></app-latest-collection>
+
+<app-brands></app-brands>
+
+
+
