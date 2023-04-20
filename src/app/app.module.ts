@@ -4,13 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CategoriesComponent } from './categories/categories.component';
+import { LatestCollectionComponent } from './home/latest-collection/latest-collection.component';
+import { BrandsComponent } from './home/brands/brands.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CategoriesComponent
+    LatestCollectionComponent,
+    BrandsComponent
   ],
   imports: [
     BrowserModule,
