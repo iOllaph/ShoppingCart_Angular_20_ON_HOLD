@@ -1,0 +1,123 @@
+.footer-padding {
+
+    width: calc(100% - 320px);
+
+    justify-content: flex-start;
+    padding-left: 160px;
+    padding-right: 160px;
+
+}
+
+
+.footer {
+
+    width: 100%;
+    user-select: none;
+    height: 400px;
+
+    background-color: #eeecec;
+
+
+    .footer-title {
+
+
+        color: var(--letter-color);
+        height: 100px;
+        letter-spacing: 1px;
+        font-size: 2.5rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+    .footer-grid {
+
+        width: 100%;
+        height: 300px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+
+
+        .footer-column-signup {
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+
+            span {
+
+                font-size: 1.3rem;
+
+
+
+            }
+
+            input {
+
+                border: none;
+                font-size: 1.1rem;
+                font-family: 'Josefin Sans', sans-serif;
+                color: var(--letter-color);
+                background-color: #fff;
+
+
+                padding: 13px;
+
+                &::placeholder {
+
+                    color: var(--home-border-image);
+
+                }
+
+            }
+
+            button {
+
+                width: 45%;
+                padding: 13px;
+                background-color: var(--home-border-image);
+                color: var(--letter-color);
+                border: none;
+                font-family: 'Josefin Sans', sans-serif;
+
+                font-size: 1.3rem;
+
+            }
+        }
+
+        .footer-column {
+
+
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 120px;
+            justify-content: flex-start;
+
+
+            .title {
+                font-size: 1.3rem;
+            }
+
+            .content {
+                font-weight: 300;
+                font-size: 1.1rem;
+                line-height: 1.2;
+            }
+        }
+
+        .footer-column-details {
+
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 120px;
+            justify-content: flex-start;
+
+
+        }
+    }
+
+}
