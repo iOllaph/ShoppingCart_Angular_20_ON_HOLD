@@ -1,21 +1,50 @@
+<div [ngStyle]="{'display': subcategories}" class="navbar-sub-categories">
+  
+    <span class="sub-categories-title">Chandeliers</span>
+ 
+    <img src="../assets/sub-categories-background/chandelier-1.jpg" alt="">
 
-  <div class="nav-bar">
-
-      <span class="material-symbols-outlined">
-          person
-      </span>
+    <div class="nav-bar-padding">
+      <div class="nav-bar">
       
-      <a class="shop-logo" routerLink="">AUSTE</a>
+        <span class="material-symbols-outlined">
+            person
+        </span>
+        
+        <a class="shop-logo" routerLink="">AUSTE</a>
 
-      <div class="icons-search-shop"> 
-        <span class="material-symbols-outlined search-icon">
-          search
-          </span>
-          <span class="material-symbols-outlined">
-            shopping_cart
-          </span>
+        <div class="icons-search-shop"> 
+          <span class="material-symbols-outlined search-icon">
+            search
+            </span>
+            <span class="material-symbols-outlined">
+              shopping_cart
+            </span>
+        </div>
       </div>
+    </div>
 
-  </div>
-  <router-outlet></router-outlet>
+</div>
 
+  <div class="main-content">
+    <div  [ngStyle]="{'display':navbarStatus}" class="nav-bar">
+     
+        <span class="material-symbols-outlined">
+            person
+        </span>
+        
+        <a class="shop-logo" routerLink="">AUSTE</a>
+
+        <div class="icons-search-shop"> 
+          <span class="material-symbols-outlined search-icon">
+            search
+            </span>
+            <span class="material-symbols-outlined">
+              shopping_cart
+            </span>
+        </div>
+
+    </div>
+    <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>
