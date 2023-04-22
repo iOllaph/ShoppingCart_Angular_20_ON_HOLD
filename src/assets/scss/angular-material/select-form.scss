@@ -1,0 +1,93 @@
+mat-form-field {
+
+
+
+
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+        border: 0.5px solid var(--home-border-image);
+    }
+
+    .mdc-text-field {
+
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px
+    }
+
+    .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+
+        background-color: var(--background-color);
+
+    }
+
+    .mat-mdc-form-field,
+    .mat-mdc-floating-label {
+
+        font-size: 1.1rem;
+        font-family: var(--font-family)
+    }
+
+
+    .mdc-text-field--focused:not(.mdc-text-field--disabled) .mdc-floating-label {
+
+        color: var(--letter-color);
+
+    }
+
+    .mat-mdc-select {
+
+        font-family: var(--font-family);
+        color: var(--letter-color);
+        font-weight: 600;
+
+    }
+
+    .mat-mdc-text-field-wrapper {
+        width: 75%;
+    }
+
+
+}
+
+.mat-mdc-form-field.mat-focused .mat-mdc-form-field-focus-overlay {
+    opacity: 0;
+}
+
+
+.mat-primary .mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text {
+
+    color: var(--letter-color) !important;
+    font-weight: 600;
+}
+
+
+
+.mdc-menu-surface {
+
+    background-color: var(--background-color);
+
+}
+
+.mat-mdc-option .mdc-list-item__primary-text {
+
+    font-family: var(--font-family) !important;
+
+}
+
+.mat-primary .mat-pseudo-checkbox-checked.mat-pseudo-checkbox-minimal::after,
+.mat-primary .mat-pseudo-checkbox-indeterminate.mat-pseudo-checkbox-minimal::after {
+
+    display: none;
+
+
+}
+
+.mdc-line-ripple {
+
+    display: none;
+
+}
+
+
+.mat-mdc-form-field.mat-focused.mat-primary .mat-mdc-select-arrow {
+    color: black;
+}
