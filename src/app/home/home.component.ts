@@ -27,6 +27,11 @@ export class HomeComponent {
   storageNormal = true;
   navStorage = "east"
 
+  wallArtsExpanded = false;
+  wallArtsNormal = true;
+  navWallArts = "east"
+
+
   constructor() { };
 
   ngOnInit(): void { };
@@ -101,7 +106,21 @@ export class HomeComponent {
 
       }
 
+    } else if (index == 4) {
 
+      this.wallArtsExpanded = !this.wallArtsExpanded;
+      this.wallArtsNormal = !this.wallArtsNormal;
+
+
+      if (this.storageExpanded == true) {
+
+        return this.navWallArts = "south"
+
+      } else {
+
+        return this.navWallArts = "east"
+
+      }
 
     }
   }

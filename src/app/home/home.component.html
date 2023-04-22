@@ -10,7 +10,7 @@
         </div>
 
         <div class="go-to-shop">
-            <a class="go-to-shop-span">start to shop</a>
+            <a routerLink="categories" class="go-to-shop-span">start to shop</a>
             <span class="material-symbols-outlined">
                 arrow_forward_ios
             </span>
@@ -37,7 +37,7 @@
 
         <div class="categories-view-all">
             <span class="categories">Categories</span>
-            <span class="view-all">View All</span>
+            <a routerLink="categories" class="view-all">View All</a>
       
         </div>
         <div [ngClass]="{'categories-row-expanded': lightingExpanded,'categories-row':lightingNormal ,}" (click)=" toggleCategoriesRow(0)" >
@@ -102,11 +102,28 @@
                 <span>closet systems</span>
             </div>
         </div>
+         <div [ngClass]="{'categories-row-expanded': wallArtsExpanded ,'categories-row':wallArtsNormal}" (click)=" toggleCategoriesRow(4)" >
+            <span class="categorie-number">05</span>
+            <span class="categorie-title">Wall Arts</span>
+            <span class="material-symbols-outlined">
+                {{ navWallArts}}
+            </span>
+            <div [ngStyle]="{display: subcategories}" class="sub-categories" >
+                <span>shelving units</span><br>
+                <span>bookcases</span><br>
+                <span>cabinets</span><br>
+                <span>storage benches</span><br>
+                <span>baskets </span><br>
+                <span>closet systems</span>
+            </div>
+        </div>
 </div>
 
 <app-latest-collection></app-latest-collection>
 
 <app-brands></app-brands>
+
+<app-about-us></app-about-us>
 
 
 
