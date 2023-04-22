@@ -1,0 +1,269 @@
+.categories-wrapper {
+
+    margin-top: 50px;
+    width: 100%;
+    user-select: none;
+    margin-bottom: 200px;
+
+    .page-status {
+
+        display: flex;
+        color: var(--home-border-image);
+        height: 80px;
+
+        .page-status-lighting {
+
+            color: var(--letter-color);
+
+        }
+
+    }
+
+
+    .wrapper-title {
+
+        color: var(--letter-color);
+        height: 80px;
+        letter-spacing: 1px;
+        font-size: 2.5rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+    }
+
+
+    .categories-grid {
+
+        margin-top: 50px;
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+
+
+
+        .column-lighting {
+
+
+            border: 2px solid var(--background-color);
+            transition: border 0.3s ease-in-out;
+            position: relative;
+            width: 350px;
+            height: 350px;
+            cursor: pointer;
+
+            &:hover {
+
+                border: 2px solid var(--home-border-image);
+
+            }
+
+            span {
+                color: var(--letter-color);
+                font-size: 1.5rem;
+                padding: 20px 10px;
+                width: 100px;
+                position: absolute;
+                z-index: 10;
+
+            }
+
+            img {
+
+
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+
+            }
+
+
+        }
+
+
+        .column-chairs {
+
+            border: 2px solid var(--background-color);
+            transition: border 0.3s ease-in-out;
+            position: relative;
+            width: 350px;
+            height: 350px;
+            cursor: pointer;
+
+            &:hover {
+
+                border: 2px solid var(--home-border-image);
+
+            }
+
+
+            span {
+                color: var(--letter-color);
+                font-size: 1.5rem;
+                padding: 20px 10px;
+                width: 100px;
+                position: absolute;
+                z-index: 10;
+
+            }
+
+            img {
+
+
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+
+            }
+
+
+
+        }
+
+
+        .column-dining-sets {
+
+            border: 2px solid var(--background-color);
+            transition: border 0.3s ease-in-out;
+            position: relative;
+            width: 350px;
+            height: 350px;
+            cursor: pointer;
+
+            &:hover {
+
+                border: 2px solid var(--home-border-image);
+
+            }
+
+
+            span {
+                color: var(--letter-color);
+                font-size: 1.5rem;
+                padding: 20px 10px;
+                width: 150px;
+                position: absolute;
+                z-index: 10;
+
+            }
+
+
+
+            img {
+
+
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+
+            }
+
+
+
+        }
+
+
+    }
+
+    .categories-grid-2 {
+        margin-top: 50px;
+        width: 100%;
+        justify-content: space-evenly;
+        display: flex;
+
+        .column-wall-art {
+
+            border: 2px solid var(--background-color);
+            transition: border 0.3s ease-in-out;
+            position: relative;
+            width: 350px;
+            height: 350px;
+            cursor: pointer;
+
+            &:hover {
+
+                border: 2px solid var(--home-border-image);
+
+            }
+
+            span {
+                color: var(--letter-color);
+                font-size: 1.5rem;
+                padding: 20px 10px;
+                width: 150px;
+                position: absolute;
+                z-index: 10;
+
+            }
+
+
+
+            img {
+
+
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+
+            }
+
+
+
+
+        }
+
+        .column-storage {
+
+            border: 2px solid var(--background-color);
+            transition: border 0.3s ease-in-out;
+            position: relative;
+            width: 350px;
+            height: 350px;
+            cursor: pointer;
+
+            &:hover {
+
+                border: 2px solid var(--home-border-image);
+
+            }
+
+
+
+            span {
+                color: var(--letter-color);
+                font-size: 1.5rem;
+                padding: 20px 10px;
+                width: 100px;
+                position: absolute;
+                z-index: 10;
+
+            }
+
+            img {
+
+
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+
+
+            }
+
+
+        }
+
+    }
+
+
+
+}
