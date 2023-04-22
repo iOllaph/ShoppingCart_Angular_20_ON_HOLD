@@ -1,0 +1,78 @@
+.wrapper {
+
+    margin-top: 50px;
+    user-select: none;
+    width: 100%;
+    margin-top: 100px;
+
+    .wrapper-header {
+
+        height: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+
+
+        .page-status {
+
+            display: flex;
+            color: var(--home-border-image);
+            align-items: center;
+
+            .status {
+
+                font-size: 1.1rem;
+
+            }
+
+            .status-sub-categories-name {
+
+                color: var(--letter-color);
+
+            }
+
+        }
+
+        .page-filter {
+
+            display: flex;
+            justify-content: flex-end;
+            gap: 50px;
+            font-size: 1.1rem;
+            align-items: center;
+
+            .page-filter-sort {
+
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+
+                .custom-mat-form-field {
+                    margin-top: 20px;
+                    overflow: hidden;
+                }
+
+            }
+
+            .page-filter-filter {
+
+                align-items: center;
+
+                display: flex;
+                gap: 10px;
+
+                .custom-mat-form-field {
+                    margin-top: 20px;
+                    overflow: hidden;
+                }
+
+            }
+        }
+    }
+
+
+
+
+
+}

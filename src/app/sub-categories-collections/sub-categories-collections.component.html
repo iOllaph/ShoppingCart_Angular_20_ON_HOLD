@@ -1,0 +1,43 @@
+<div class="wrapper">
+ <div class="wrapper-header">
+        <div class="page-status">
+                <span class="status-home status">Home</span>/
+                <span class="status-categories status">Categories</span>/
+                <span class="status-sub-categories status">Lighting</span>/
+                <span class="status-sub-categories-name status">Chandeliers</span>
+        </div>
+        <div class="page-filter">
+                <div class="page-filter-sort" >
+                        <span>Sort By:</span>
+                        <div  class="custom-mat-form-field">
+                                <mat-form-field appearance="fill" >
+                                        <mat-label>Low - High</mat-label>
+                                        <mat-select disableRipple >
+                                        <mat-option value="1">Low</mat-option>
+                                        <mat-option value="2">High</mat-option>
+                                        </mat-select>
+                                </mat-form-field>
+                        </div>
+                </div>
+               <div class="page-filter-filter">
+                        <span>Filter By:</span>
+                        <div  class="custom-mat-form-field">
+                                <mat-form-field appearance="fill" >
+                                        <mat-select disableRipple [(ngModel)]="selectedValue">
+                                        <mat-option value="1" >Latest</mat-option>
+                                        <mat-option value="2">Recent</mat-option>
+                                        </mat-select>
+                                </mat-form-field>
+                        </div>
+               </div>
+        </div>
+ </div>
+         
+       
+      
+
+
+
+  
+
+</div>
