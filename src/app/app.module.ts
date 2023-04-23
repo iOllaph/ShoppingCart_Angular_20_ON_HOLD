@@ -17,6 +17,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
+import { ProductPageComponent } from './sub-categories-collections/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     CategoriesComponent,
     SubCategoriesComponent,
     FooterComponent,
-    SubCategoriesCollectionsComponent
+    SubCategoriesCollectionsComponent,
+    ProductPageComponent
   ],
   imports: [
     BrowserModule,

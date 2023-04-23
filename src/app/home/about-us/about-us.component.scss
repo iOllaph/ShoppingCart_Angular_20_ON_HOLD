@@ -186,3 +186,182 @@
     }
 
 }
+
+
+@media (max-width: 1024px) {
+
+    .about-us-wrapper {
+
+        margin-bottom: 150px;
+        gap: 15px;
+
+        .about-us-title {
+
+            font-size: 2rem;
+
+        }
+
+        .container-content {
+
+            height: 100%;
+            display: flex;
+            width: 100%;
+            gap: 25px;
+            flex-direction: row;
+
+            .mission-content {
+
+                grid-template-columns: repeat(2, 117px);
+                grid-template-rows: repeat(2, 133px);
+
+                .mission-content-text {
+
+                    font-size: .9rem;
+
+                }
+
+            }
+
+            .history-content {
+
+                gap: 8px;
+
+                .history-content-text {
+
+                    span {
+
+                        word-break: break-word;
+                        font-size: 1rem;
+
+                    }
+
+                }
+
+                .history-content-grid {
+
+                    width: 40%;
+                    display: grid;
+                    grid-template-rows: repeat(2, 133px);
+                    gap: 10px;
+
+                    .history-content-grid-text {
+
+                        span {
+
+                            font-size: .9rem;
+                            word-break: break-word;
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
+
+@media (max-width: 767px) {
+
+    .about-us-wrapper {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        gap: 15px;
+
+        .about-us-title {
+
+            font-size: 1.6rem;
+
+        }
+
+        .container-content {
+
+            height: 100%;
+            display: flex;
+            width: 100%;
+            gap: 70px;
+            flex-direction: column;
+            justify-items: center;
+
+            .mission-content {
+
+                grid-template-columns: repeat(2, 180px);
+                grid-template-rows: repeat(2, 172px);
+
+                .mission-content-text {
+
+                    font-size: .9rem;
+
+                }
+
+            }
+
+            .history-content {
+
+                display: flex;
+                width: 100%;
+                height: 60%;
+                flex-direction: column;
+
+
+                gap: 30px;
+
+                .history-content-text {
+                    height: 65%;
+                    width: 100%;
+                    justify-content: center;
+
+                    span {
+
+                        word-break: break-word;
+                        font-size: 1rem;
+
+                    }
+
+                }
+
+                .history-content-grid {
+
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    justify-content: center;
+                    height: 300px;
+
+                    .history-content-grid-img {
+
+                        margin-left: 69px;
+                        height: 100%;
+                        width: 60%;
+
+                    }
+
+                    .history-content-grid-text {
+
+                        justify-content: center;
+                        width: 200px;
+                        margin-left: 72px;
+
+                        span {
+
+                            font-size: .9rem;
+                            word-break: break-word;
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}

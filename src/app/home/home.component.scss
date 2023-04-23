@@ -21,6 +21,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+    transition: 0.5s ease-in-out;
 
     .home-column-chair {
         position: relative;
@@ -197,9 +198,17 @@ a {
         .go-to-shop-span {
 
             color: var(--letter-color);
-            transition: 0.3s;
+            transition: color 0.3s;
+            transition: 0.5s ease-in-out;
 
         }
+
+        .material-symbols-outlined {
+
+            transition: 0.5s ease-in-out;
+
+        }
+
 
         .go-to-shop-circle {
 
@@ -207,6 +216,8 @@ a {
             width: 50px;
             border: 2px solid;
             border-radius: 50%;
+            transition: 0.5s ease-in-out;
+
 
         }
 
@@ -416,5 +427,266 @@ a {
         font-weight: 500;
         color: var(--letter-color);
     }
+
+}
+
+
+@media (max-width: 1024px) {
+
+    .home-wrapper {
+
+        height: 600px;
+
+
+
+        .go-to-shop {
+
+            .go-to-shop-span {
+
+                color: var(--letter-color);
+                transition: 0.3s;
+                font-size: 1.3rem;
+
+            }
+
+            .material-symbols-outlined {
+
+                font-size: 1.3rem;
+
+            }
+
+            .go-to-shop-circle {
+
+                height: 40px;
+                width: 40px;
+                border: 2px solid;
+                border-radius: 50%;
+
+            }
+
+        }
+
+        @keyframes slide-out-arrow-home {
+            from {
+                transform: translateX(40px);
+            }
+
+            to {
+                transform: translateX(0px);
+
+            }
+        }
+
+        @keyframes slide-in-arrow-home {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(40px);
+
+            }
+        }
+
+
+        .go-to-shop:hover .material-symbols-outlined {
+
+            animation: slide-in-arrow-home 0.3s ease-in-out forwards;
+
+        }
+
+
+
+        .go-to-shop:not(:hover) .material-symbols-outlined {
+
+            animation: slide-out-arrow-home 0.3s ease-in-out forwards;
+
+        }
+
+    }
+
+    .categories-wrapper {
+
+        .categories-row-expanded {
+
+            .sub-categories {
+                left: 41.5%;
+                transition: left 0.3s ease-in-out;
+
+            }
+
+        }
+
+        .categories-view-all {
+
+            .categories {
+
+                font-size: 2rem;
+                transition: font-size 0.5s ease-in-out;
+
+            }
+
+            .view-all {
+
+                font-size: 1rem;
+                transition: font-size 0.5s ease-in-out;
+
+            }
+
+        }
+
+        .categorie-title {
+
+            font-size: 1.4rem;
+            transition: font-size 0.3s ease-in-out;
+
+
+        }
+
+        .material-symbols-outlined {
+
+            font-size: 1.4rem;
+            transition: font-size 0.3s ease-in-out;
+
+        }
+
+        .categorie-number {
+
+            font-size: 1.4rem;
+            transition: font-size 0.3s ease-in-out;
+
+        }
+    }
+
+
+
+}
+
+@media (max-width: 767px) {
+
+    .home-wrapper {
+
+        height: 400px;
+        margin-bottom: 100px;
+
+
+
+        .go-to-shop {
+
+            .go-to-shop-span {
+
+                color: var(--letter-color);
+                transition: 0.3s;
+                font-size: 1rem;
+
+            }
+
+            .material-symbols-outlined {
+
+                font-size: 1rem;
+
+            }
+
+            .go-to-shop-circle {
+
+                height: 30px;
+                width: 30px;
+
+            }
+
+        }
+
+        @keyframes slide-out-arrow-home-smartphone {
+            from {
+                transform: translateX(33px);
+            }
+
+            to {
+                transform: translateX(0px);
+
+            }
+        }
+
+        @keyframes slide-in-arrow-home-smartphone {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(33px);
+
+            }
+        }
+
+
+        .go-to-shop:hover .material-symbols-outlined {
+
+            animation: slide-in-arrow-home-smartphone 0.3s ease-in-out forwards;
+
+        }
+
+
+
+        .go-to-shop:not(:hover) .material-symbols-outlined {
+
+            animation: slide-out-arrow-home-smartphone 0.3s ease-in-out forwards;
+
+        }
+
+    }
+
+    .categories-wrapper {
+
+        .categories-row-expanded {
+
+            .sub-categories {
+                left: 39.5%;
+                transition: left 0.3s ease-in-out;
+
+            }
+
+        }
+
+        .categories-view-all {
+
+            .categories {
+
+                font-size: 1.6rem;
+                transition: font-size 0.5s ease-in-out;
+
+            }
+
+            .view-all {
+
+                font-size: 1rem;
+                transition: font-size 0.5s ease-in-out;
+
+            }
+
+        }
+
+        .categorie-title {
+
+            font-size: 1.1rem;
+            transition: font-size 0.3s ease-in-out;
+
+
+        }
+
+        .material-symbols-outlined {
+
+            font-size: 1.1rem;
+            transition: font-size 0.3s ease-in-out;
+
+        }
+
+        .categorie-number {
+
+            font-size: 1.1rem;
+            transition: font-size 0.3s ease-in-out;
+
+        }
+    }
+
 
 }

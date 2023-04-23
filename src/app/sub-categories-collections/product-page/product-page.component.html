@@ -1,0 +1,211 @@
+<div class="wrapper">
+
+    <div class="page-status">
+        <span class="status-home status">Home</span>/
+        <span class="status-categories status">Categories</span>/
+        <span class="status-sub-categories status">Lighting</span>/
+        <span class="status-sub-categories-name status">Chandeliers</span>
+    </div>
+
+    <div class="product">
+
+        <div class="product-image" >
+
+            <div class="slide-arrows">
+
+                <span class="material-symbols-outlined " (click)="prevImage()" >
+                    chevron_left
+                </span>
+                <span class="material-symbols-outlined " (click)="nextImage()">
+                    navigate_next
+                </span>
+        
+            </div>
+            <div *ngFor="let image of images; let i = index;" class="slide-images">
+                <img src="{{image.url}}" [hidden]="currentIndex !== i" class="slide-show-image">
+            </div>
+
+        </div>
+        <div class="product-description">
+            <span class="product-title">Duke Geometric Chandelier</span>
+            <div class="rating-product">
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span>
+                <span class="material-symbols-outlined">
+                    star
+                </span> 
+            </div>
+            <span class="product-price">R$ 13.999</span>
+            <div class="product-color">
+                <div class="square-hover">
+                    <div class="square"></div>
+                </div>
+                <div class="square-hover">
+                    <div class="square gray "></div>
+                </div>
+                <div class="square-hover">
+                    <div class="square white"></div>
+                </div>
+               
+            </div>
+            <div class="product-info">
+                <span class="title">Design</span>
+                <span class="text">
+                    Inspired by kinetic mid-century lighting, this chandelier's
+                    contoured shades are held by<br>
+                    angular arms taht reach from a central cluster.
+                </span>
+            </div>
+            <div class="product-type">
+                <div class="product-material">
+                    <span class="title">Material</span>
+                    <span class="text">Matte Black Iron</span>
+                </div>
+                <div class="product-dimension">
+                    <span class="title">Dimension</span>
+                    <span class="text">4.9"H x 10.13"H x 11.3"D</span>
+                </div>
+            </div>
+            <div class="custom-input">
+                <span class="material-symbols-outlined" (click)="increment()">
+                  add
+                    </span>
+                <input type="number" [(ngModel)]= "value" readonly>
+                <span class="material-symbols-outlined" (click)="decrement()">
+                    remove
+                    </span>
+            </div>
+            <div class="cart-buttons">
+                <button class="add-to-cart">Add To Cart +</button>
+                <button>Buy Now</button>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="image-preview">
+
+        <div class="image-div "[ngClass]="{'active': checkActive(1)}" (click)="setImage(1)">
+            <img src="../assets/lighting/lighting-1.jpg" >
+        </div>
+        <div class="image-div" [ngClass]="{'active': checkActive(2)}" (click)="setImage(2)" >
+            <img src="../assets/lighting/lighting-2.jpg">
+        </div>
+        <div class="image-div" [ngClass]="{'active': checkActive(3)}" (click)="setImage(3)">
+            <img src="../assets/lighting/lighting-3.jpg" >
+        </div>
+
+    </div>
+
+    <div class="similar-products">Similiar Products</div>
+
+    <div class="collection-cards">
+
+        <div class="card">
+           
+            <img src="../assets/collections/asura-chair-1.jpg" >
+            <div class="card-content">
+                <span class="card-title">Walsh bar & counter stool</span>
+                <div class="card-rating">
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                    <span class="material-symbols-outlined">
+                        star
+                    </span>
+                    <span class="material-symbols-outlined">
+                        star
+                    </span> 
+                 
+                </div>
+                <span class="card-price">R$ 13.999</span>
+            </div>
+
+        </div>
+        <div class="cards-middle">
+                <div class="see-collections">
+                    <a class="see-collections-span">see collections</a>
+                    <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span>
+                    <div class="see-collections-circle"></div>
+                </div>
+                <div class="card-middle-content">
+                
+                    <img src="../assets/collections/asura-chair-1.jpg" >
+                
+            
+                    <div class="card-content">
+                        <span class="card-title">Walsh bar & counter stool</span>
+                        <div class="card-rating">
+                            <span class="material-symbols-outlined">
+                                star
+                            </span>
+                            <span class="material-symbols-outlined">
+                                star
+                            </span>
+                            <span class="material-symbols-outlined">
+                                star
+                            </span>
+                            <span class="material-symbols-outlined">
+                                star
+                            </span>
+                            <span class="material-symbols-outlined">
+                                star
+                            </span> 
+                        </div>
+                        <span class="card-price">R$ 13.999</span>
+                    </div>
+                </div>
+        </div>
+        <div class="card">
+            
+                <img src="../assets/collections/asura-chair-1.jpg" >
+        
+        
+                <div class="card-content">
+                    <span class="card-title">Walsh bar & counter stool</span>
+                    <div class="card-rating">
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span>
+                        <span class="material-symbols-outlined">
+                            star
+                        </span> 
+                    
+                        
+                    </div>
+                    <span class="card-price">R$ 13.999</span>
+                </div>
+        </div>
+
+    </div>
+
+
+</div>

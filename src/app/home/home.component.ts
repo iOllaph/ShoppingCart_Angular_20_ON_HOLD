@@ -27,6 +27,7 @@ export class HomeComponent {
   storageNormal = true;
   navStorage = "east"
 
+
   wallArtsExpanded = false;
   wallArtsNormal = true;
   navWallArts = "east"
@@ -112,7 +113,7 @@ export class HomeComponent {
       this.wallArtsNormal = !this.wallArtsNormal;
 
 
-      if (this.storageExpanded == true) {
+      if (this.wallArtsExpanded == true) {
 
         return this.navWallArts = "south"
 

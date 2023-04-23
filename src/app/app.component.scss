@@ -164,3 +164,43 @@ a {
             'opsz' 48
     }
 }
+
+@media (max-width: 1024px) {
+
+    .main-content {
+
+        padding: 20px 80px;
+
+    }
+
+
+
+}
+
+@media (max-width: 767px) {
+
+    .main-content {
+
+        padding: 10px 10px;
+
+    }
+
+    .nav-bar {
+
+        .material-symbols-outlined {
+
+            font-size: 1.6rem;
+
+        }
+
+        .shop-logo {
+
+            font-size: 2rem;
+
+        }
+
+    }
+
+
+
+}
